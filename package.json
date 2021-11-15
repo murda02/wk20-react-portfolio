@@ -1,0 +1,27 @@
+{
+  "name": "wk20-react-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/murda02/wk20-react-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/murda02/wk20-react-portfolio/issues"
+  },
+  "homepage": "https://murda02.github.io/my-app",
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
