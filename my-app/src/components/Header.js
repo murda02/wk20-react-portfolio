@@ -1,13 +1,13 @@
 // src/components/Header.js
 
 import React from "react";
-import mountain_view_dlm from './assets/img/mountain_view_dlm.jpg'
+import banner from './assets/img/banner.jpg'
 
 function Header() {
   return (
     <header>
-      <h1 style={{position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, justifyContent: 'center', alignItems: 'center'}}>Dave Murphy</h1>
-      <img src={mountain_view_dlm} alt="Rocky Mountains" style={{width: '100%'}}/>
+      <h1 style={{position: 'left', fontSize: '80px', top: 200, color: '#faab6e'}}>Dave Murphy</h1>
+      <img src={banner} alt="Binary" style={{width: '100%'}}/>
     </header>
   );
 }

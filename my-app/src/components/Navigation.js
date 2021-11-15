@@ -4,8 +4,8 @@ import React from "react";
 
 function Navigation() {
   return (
-    <nav style={{ float: "right", flexDirection: "row" }}>
-      <h2>About Me | Work | Contact | Resume</h2>
+    <nav style={{position: 'absolute', top: '50%', left: '70%', fontSize: '30px', color: '#faab6e'}}>
+      About Me | Work | Contact | Resume
     </nav>
   );
 }
