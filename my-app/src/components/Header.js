@@ -2,12 +2,23 @@
 
 import React from "react";
 import banner from './assets/img/banner.jpg'
+import Navigation from "./Navigation";
 
 function Header() {
+
+var nameStyle = {
+  position: "relative", 
+  fontSize: '4rem', 
+  color: '#faab6e', 
+  display: 'inline',
+  lineHeight: '719%',
+  left: '2%'
+}
+
   return (
-    <header>
-      <h1 style={{position: 'left', fontSize: '80px', top: 200, color: '#faab6e'}}>Dave Murphy</h1>
-      <img src={banner} alt="Binary" style={{width: '100%'}}/>
+    <header style={{backgroundImage: `url(${banner})`, minHeight: '45vh', minWidth: '100vw', backgroundRepeat: 'no-repeat' }}>
+      <h1 style={nameStyle}>Dave Murphy</h1>
+      <Navigation />
     </header>
   );
 }
