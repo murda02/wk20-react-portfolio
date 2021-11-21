@@ -2,7 +2,7 @@
 
 import React from "react";
 
-function Navigation({ currentPage, handlePageChnage}) {
+function Navigation({ currentPage, handlePageChange}) {
 
   var navStyle = {
     position: "relative", 
@@ -17,17 +17,11 @@ function Navigation({ currentPage, handlePageChnage}) {
   }
 
   return (
-    <nav 
-    className='click-nav'
-    style={navStyle}>
-      <a href="/about" 
-      style={linkStyle}>
-        onClick={() => handlePageChnage("About")}
-        className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
-        About Me | </a>
-      {/* <a href="/portfolio" style={linkStyle}>Portfolio | </a>
+    <nav style={navStyle}>
+      <a href="/about" style={linkStyle}>About Me | </a>
+      <a href="/portfolio" style={linkStyle}>Portfolio | </a>
       <a href="/contact" style={linkStyle}>Contact | </a>
-      <a href="/resume" style={linkStyle}>Resume</a> */}
+      <a href="/resume" style={linkStyle}>Resume</a>
     </nav>
   );
   }
