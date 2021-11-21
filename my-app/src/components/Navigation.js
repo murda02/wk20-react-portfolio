@@ -2,11 +2,11 @@
 
 import React from "react";
 
-function Navigation() {
+function Navigation({ currentPage, handlePageChnage}) {
 
   var navStyle = {
     position: "relative", 
-    left: "17%", 
+    left: "15%", 
     fontSize: '2rem', 
     color: '#faab6e', 
     display: 'inline'
@@ -15,13 +15,19 @@ function Navigation() {
     color: '#faab6e',
     textDecoration: 'none'
   }
-//on hover does not exist
+
   return (
-    <nav style={navStyle}>
-      <a href="/about" style={linkStyle}>About Me | </a>
-      <a href="/work" style={linkStyle}>Work | </a>
+    <nav 
+    className='click-nav'
+    style={navStyle}>
+      <a href="/about" 
+      style={linkStyle}>
+        onClick={() => handlePageChnage("About")}
+        className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
+        About Me | </a>
+      {/* <a href="/portfolio" style={linkStyle}>Portfolio | </a>
       <a href="/contact" style={linkStyle}>Contact | </a>
-      <a href="/resume" style={linkStyle}>Resume</a>
+      <a href="/resume" style={linkStyle}>Resume</a> */}
     </nav>
   );
   }
