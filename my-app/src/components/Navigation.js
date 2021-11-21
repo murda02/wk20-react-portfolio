@@ -1,8 +1,9 @@
 //src/components/Navigation.js
-
-import React from "react";
+import React from 'react';
 
 function Navigation({ currentPage, handlePageChange}) {
+
+  console.log("currentPage: ", currentPage);
 
   var navStyle = {
     position: "relative", 
@@ -18,9 +19,18 @@ function Navigation({ currentPage, handlePageChange}) {
 
   return (
     <nav style={navStyle}>
-      <a href="/about" style={linkStyle}>About Me | </a>
+      <a href="/about" 
+      onClick={() => handlePageChange('About')}
+      className={currentPage ==='About' ? 'nav-link active' : 'nav-link'}
+      style={linkStyle}>About Me | </a>
+
       <a href="/portfolio" style={linkStyle}>Portfolio | </a>
-      <a href="/contact" style={linkStyle}>Contact | </a>
+
+      <a href="/contact"
+      onClick={() => handlePageChange('Contact')}
+      className={currentPage ==='Contact' ? 'nav-link active' : 'nav-link'} 
+      style={linkStyle}>Contact | </a>
+
       <a href="/resume" style={linkStyle}>Resume</a>
     </nav>
   );

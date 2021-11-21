@@ -1,7 +1,15 @@
+import React from 'react'
 
 export default function Contact() {
     return (
-        <h1>THIS IS THE Contact PAGE!!!!!!!</h1>
+       <div>
+           <section>
+               <div>
+                   <h2>Contact Me</h2>
+                   <p>To get a  hold of me, please fill out the form below, thanks!</p>
+               </div>
+           </section>
+       </div>
     )
 
 }
