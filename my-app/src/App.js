@@ -1,12 +1,29 @@
-import './App.css';
-import React from 'react';
-import PortfolioContainer from './components/PortfolioContainer';
+import "./App.css";
+import React from "react";
+import Header from "./components/Header";
+import About from "./components/pages/About";
+import Contact from "./components/pages/Contact";
+import Portfolio from "./components/pages/Portfolio";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <PortfolioContainer />
-    </div>
+    <Router>
+      <div>
+        <Header />
+        <Route exact path="/">
+          <About />
+        </Route>
+        <Route exact path="/contact">
+          <Contact />
+        </Route>
+        <Route exact path="/portfolio">
+          <Portfolio />
+        </Route>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

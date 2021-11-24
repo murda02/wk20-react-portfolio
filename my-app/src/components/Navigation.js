@@ -1,9 +1,11 @@
 //src/components/Navigation.js
 import React from 'react';
+import { NavLink } from 'react-router-dom'
+import pdf from "./assets/DMurphy_Resume.pdf"
 
-function Navigation({ currentPage, handlePageChange}) {
+function Navigation() {
 
-  console.log("currentPage: ", currentPage);
+  
 
   var navStyle = {
     position: "relative", 
@@ -19,19 +21,10 @@ function Navigation({ currentPage, handlePageChange}) {
 
   return (
     <nav style={navStyle}>
-      <a href="/about" 
-      onClick={() => handlePageChange('About')}
-      className={currentPage ==='About' ? 'nav-link active' : 'nav-link'}
-      style={linkStyle}>About Me | </a>
-
-      <a href="/portfolio" style={linkStyle}>Portfolio | </a>
-
-      <a href="/contact"
-      onClick={() => handlePageChange('Contact')}
-      className={currentPage ==='Contact' ? 'nav-link active' : 'nav-link'} 
-      style={linkStyle}>Contact | </a>
-
-      <a href="/resume" style={linkStyle}>Resume</a>
+      <NavLink to="/" style={linkStyle}>About Me | </NavLink>
+      <NavLink to="/portfolio" style={linkStyle}>Portfolio | </NavLink>
+      <NavLink to="/contact" style={linkStyle}>Contact | </NavLink>
+      <a href={pdf} target="_blank" style={linkStyle} rel="noopener noreferrer">Resume</a>
     </nav>
   );
   }
