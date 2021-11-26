@@ -7,16 +7,24 @@ import Navigation from "./Navigation";
 function Header() {
 
 var nameStyle = {
-  position: "relative", 
+  position: 'absolute', 
+  bottom: '-10%',
   fontSize: '4rem', 
   color: '#faab6e', 
   display: 'inline',
-  lineHeight: '719%',
   left: '2%'
 }
 
+var headerStyle = {
+  position: "relative",
+  backgroundImage: `url(${banner})`,
+  minHeight: '26vh', 
+  minWidth: '100vw', 
+  backgroundRepeat: 'no-repeat' 
+}
+
   return (
-    <header style={{backgroundImage: `url(${banner})`, minHeight: '45vh', minWidth: '100vw', backgroundRepeat: 'no-repeat' }}>
+    <header style={headerStyle}>
       <h1 style={nameStyle}>Dave Murphy</h1>
       <Navigation />
     </header>

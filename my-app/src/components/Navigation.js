@@ -8,8 +8,9 @@ function Navigation() {
   
 
   var navStyle = {
-    position: "relative", 
-    left: "15%", 
+    position: 'absolute',
+    right: '32%',
+    bottom: '9%',  
     fontSize: '2rem', 
     color: '#faab6e', 
     display: 'inline'

@@ -3,27 +3,32 @@
 //src/components/Navigation.js
 import React from 'react';
 import github from "./assets/img/github.png"
+import linkedin from './assets/img/linkedIn.png'
 
 function Footer() {
-
-  
-
-  var footStyle = {
-    position: "relative", 
-    left: "15%", 
-    fontSize: '2rem', 
-    color: '#faab6e', 
-    display: 'inline'
+  var footerStyle = {
+    position: "absolute", 
+    left: "20%", 
+    display: 'flex',
+    paddingTop: '2%'
   }
-  var linkStyle = {
-    color: '#faab6e',
-    textDecoration: 'none'
+  var footerImgStyle = {
+    padding: '1%',
   }
 
   return (
-    <nav style={footStyle}>
-      <a href={'https://www.github.com'} target="_blank" rel="noopener noreferrer">
-          <img src={github}></img>
+    <nav style={footerStyle}>
+      <a href={'https://www.github.com/murda02'} 
+      style={footerImgStyle} 
+      target="_blank" 
+      rel="noopener noreferrer">
+      <img src={github} alt='github icon'></img>
+      </a>
+      <a href={'https://www.linkedin.com/in/-dave-murphy/'} 
+      style={footerImgStyle} 
+      target="_blank" 
+      rel="noopener noreferrer">
+      <img src={linkedin} alt='linkedIn icon'></img>
       </a>
     </nav>
   );
