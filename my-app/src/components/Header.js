@@ -1,8 +1,7 @@
 // src/components/Header.js
 
 import React from "react";
-import banner from './assets/img/banner.jpg'
-import banner2 from './assets/img/banner.png'
+import banner from './assets/img/banner.png'
 import Navigation from "./Navigation";
 
 function Header() {
@@ -18,8 +17,9 @@ var nameStyle = {
 
 var headerStyle = {
   position: "relative",
-  backgroundImage: `url(${banner2})`,
-  minHeight: '18.8vh', 
+  backgroundImage: `url(${banner})`,
+  minHeight: '16.8vh',
+  maxHeight: '16.8vh', 
   minWidth: '100vw'
 }
 

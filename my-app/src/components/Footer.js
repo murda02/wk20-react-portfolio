@@ -7,17 +7,18 @@ import linkedin from './assets/img/linkedIn.png'
 
 function Footer() {
   var footerStyle = {
-    position: "absolute", 
-    left: "20%", 
-    display: 'flex',
-    paddingTop: '2%'
+    width: '25%',
+    display: 'inline',
+    paddingTop: '2%',
+    marginLeft: 'auto',
+    marginRight: 'auto'
   }
   var footerImgStyle = {
     padding: '1%',
   }
 
   return (
-    <nav style={footerStyle}>
+    <footer style={footerStyle}>
       <a href={'https://www.github.com/murda02'} 
       style={footerImgStyle} 
       target="_blank" 
@@ -30,7 +31,7 @@ function Footer() {
       rel="noopener noreferrer">
       <img src={linkedin} alt='linkedIn icon'></img>
       </a>
-    </nav>
+    </footer>
   );
   }
 

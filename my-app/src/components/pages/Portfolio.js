@@ -12,6 +12,7 @@ export default function Portfolio() {
     display: "inline",
     left: "2%",
     padding: "2%",
+    border: '2px'
   };
 
   var picStyle = {
