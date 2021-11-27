@@ -36,6 +36,9 @@
     transform: rotate(360deg);
   }
 }
+body {
+  background-color: rgb(247, 236, 185);
+}
 
 @media only screen and (max-width: 600px) {
   body {

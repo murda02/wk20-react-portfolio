@@ -12,6 +12,11 @@ const ContactForm = () => {
     display: 'block'
   };
 
+  var messageStyle = {
+    width: '40%',
+    display: 'block'
+  };
+
   var padElementsStyle = {
     paddingTop: '1%'
   };
@@ -52,7 +57,7 @@ const ContactForm = () => {
       </div>
       <div style={padElementsStyle}>
         <label htmlFor="message">Message:</label>
-        <textarea style={inputFields} id="message" required />
+        <textarea style={messageStyle} id="message" required />
       </div>
       <button style={submitBtnsStyle} type="submit">{status}</button>
     </form>

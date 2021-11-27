@@ -2,12 +2,13 @@
 
 import React from "react";
 import banner from './assets/img/banner.jpg'
+import banner2 from './assets/img/banner.png'
 import Navigation from "./Navigation";
 
 function Header() {
 
 var nameStyle = {
-  position: 'absolute', 
+  position: 'relative', 
   bottom: '-10%',
   fontSize: '4rem', 
   color: '#faab6e', 
@@ -17,10 +18,9 @@ var nameStyle = {
 
 var headerStyle = {
   position: "relative",
-  backgroundImage: `url(${banner})`,
-  minHeight: '26vh', 
-  minWidth: '100vw', 
-  backgroundRepeat: 'no-repeat' 
+  backgroundImage: `url(${banner2})`,
+  minHeight: '18.8vh', 
+  minWidth: '100vw'
 }
 
   return (

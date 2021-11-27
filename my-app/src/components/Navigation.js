@@ -8,12 +8,12 @@ function Navigation() {
   
 
   var navStyle = {
-    position: 'absolute',
-    right: '32%',
-    bottom: '9%',  
+    float: 'right',
     fontSize: '2rem', 
     color: '#faab6e', 
-    display: 'inline'
+    display: 'inline',
+    paddingRight: '3%',
+    paddingTop: '1.9%'
   }
   var linkStyle = {
     color: '#faab6e',
