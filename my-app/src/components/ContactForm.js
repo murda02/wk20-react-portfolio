@@ -3,18 +3,30 @@ import React, { useState } from "react";
 const ContactForm = () => {
 
   var formStyle = {
-    paddingLeft: '5%',
+    paddingLeft: '3%',
     padding: '1%',
-    display: 'block'
+    display: 'block',
+    fontSize: '1.5rem'
   };
 
   var inputFields = {
-    display: 'block'
+    display: 'block',
+    width: '20%',
+    padding: '12px 20px',
+    margin: '8px 0',
+    boxSizing: 'border-box',
+    border: '2px solid #d3ade7'
+    
   };
 
   var messageStyle = {
-    width: '40%',
-    display: 'block'
+    width: '50%',
+    display: 'block',
+    padding: '12px 40px',
+    margin: '8px 0',
+    boxSizing: 'border-box',
+    border: '2px solid #d3ade7',
+    height: '250px'
   };
 
   var padElementsStyle = {
@@ -22,7 +34,13 @@ const ContactForm = () => {
   };
 
   var submitBtnsStyle = {
-    marginTop: '1%'
+    marginTop: '1%',
+    boxShadow: `5px 5px 3px gray`,
+    backgroundColor: '#d3ade7',
+    borderRadius: '8px',
+    padding: '8px 16px',
+    fontSize: '20px'
+
   };
   const [status, setStatus] = useState("Submit");
   const handleSubmit = async (e) => {

@@ -1,35 +1,30 @@
-//src/compents/Footer.js
 
-//src/components/Navigation.js
 import React from 'react';
 import github from "./assets/img/github.png"
 import linkedin from './assets/img/linkedIn.png'
 
 function Footer() {
   var footerStyle = {
-    width: '25%',
-    display: 'inline',
-    paddingTop: '2%',
-    marginLeft: 'auto',
-    marginRight: 'auto'
+    display: "flex", 
+    justifyContent:"center",
+    bottom: 0
   }
   var footerImgStyle = {
-    padding: '1%',
+    padding: '3%',
+    width: '90%'
   }
 
   return (
     <footer style={footerStyle}>
       <a href={'https://www.github.com/murda02'} 
-      style={footerImgStyle} 
       target="_blank" 
       rel="noopener noreferrer">
-      <img src={github} alt='github icon'></img>
+      <img src={github} alt='github icon' style={footerImgStyle} ></img>
       </a>
       <a href={'https://www.linkedin.com/in/-dave-murphy/'} 
-      style={footerImgStyle} 
       target="_blank" 
       rel="noopener noreferrer">
-      <img src={linkedin} alt='linkedIn icon'></img>
+      <img src={linkedin} alt='linkedIn icon' style={footerImgStyle} ></img>
       </a>
     </footer>
   );

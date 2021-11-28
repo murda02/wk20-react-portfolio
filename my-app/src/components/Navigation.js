@@ -1,7 +1,7 @@
 //src/components/Navigation.js
 import React from 'react';
 import { NavLink } from 'react-router-dom'
-import pdf from "./assets/DMurphy_Resume.pdf"
+
 
 function Navigation() {
 
@@ -25,7 +25,8 @@ function Navigation() {
       <NavLink to="/" style={linkStyle}>About Me | </NavLink>
       <NavLink to="/portfolio" style={linkStyle}>Portfolio | </NavLink>
       <NavLink to="/contact" style={linkStyle}>Contact | </NavLink>
-      <a href={pdf} target="_blank" style={linkStyle} rel="noopener noreferrer">Resume</a>
+      <NavLink to="/resume" style={linkStyle}>Resume</NavLink>
+      {/* <a href={pdf} target="_blank" style={linkStyle} rel="noopener noreferrer">Resume</a> */}
     </nav>
   );
   }
