@@ -2,8 +2,6 @@ import davePic from '../assets/img/davePic.png'
 
 export default function About() {
   var aboutStyle = {
-    // marginLeft: 'auto',
-    // marginRight: 'auto',
     fontSize: "1.5rem",
     color: 'black',
     display: "block",
@@ -20,8 +18,6 @@ export default function About() {
     paddingBottom: '3%',
     paddingTop: '1%',
     paddingLeft: '2%'
-    // marginLeft: 'auto',
-    // marginRight: 'auto',
   }
 
   var textStyle = {

@@ -13,6 +13,11 @@ export default function Portfolio() {
     paddingTop: '4%'
   };
 
+  var portfolioLinkStyle = {
+    textDecoration: 'none',
+    color: 'black'
+  };
+
   var picStyle = {
     // width: '90%',
     // display: 'block',
@@ -54,12 +59,12 @@ export default function Portfolio() {
       target="_blank" rel="noopener noreferrer" ><img style={picStyle} src={techBlog} alt="Tech Blog app"></img></a>
       <div>
       <ul style={portfolioStyle}>
-                <li><a href="https://github.com/murda02/project-2" target="_blank" rel="noopener noreferrer">Drink and A Movie Repo</a></li>
-                <li><a href="https://github.com/murda02/homework-week-6-weather-dashboard-dlm" target="_blank" rel="noopener noreferrer">Weather App Repo</a></li>
-                <li><a href="https://github.com/murda02/homework-week-5-work-day-scheduler-dlm/" target="_blank" rel="noopener noreferrer">Work Day Scheduler Repo</a></li>
-                <li><a href="https://github.com/murda02/wk12-employee-tracker" target="_blank" rel="noopener noreferrer">Employee Tracker Repo</a></li>
-                <li><a href="https://github.com/murda02/wk10-team-profile-generator" target="_blank" rel="noopener noreferrer">Team Profile Generator Repo</a></li>
-                <li><a href="https://github.com/murda02/wk14-tech-blog" target="_blank" rel="noopener noreferrer">Tech Blog Repo</a></li>
+                <li><a href="https://github.com/murda02/project-2" target="_blank" rel="noopener noreferrer" style={portfolioLinkStyle}>Drink and A Movie Repo Link</a></li>
+                <li><a href="https://github.com/murda02/homework-week-6-weather-dashboard-dlm" target="_blank" rel="noopener noreferrer" style={portfolioLinkStyle}>Weather App Repo Link</a></li>
+                <li><a href="https://github.com/murda02/homework-week-5-work-day-scheduler-dlm/" target="_blank" rel="noopener noreferrer" style={portfolioLinkStyle}>Work Day Scheduler Repo Link</a></li>
+                <li><a href="https://github.com/murda02/wk12-employee-tracker" target="_blank" rel="noopener noreferrer" style={portfolioLinkStyle}>Employee Tracker Repo Link</a></li>
+                <li><a href="https://github.com/murda02/wk10-team-profile-generator" target="_blank" rel="noopener noreferrer" style={portfolioLinkStyle}>Team Profile Generator Repo Link</a></li>
+                <li><a href="https://github.com/murda02/wk14-tech-blog" target="_blank" rel="noopener noreferrer" style={portfolioLinkStyle}>Tech Blog Repo Link</a></li>
             </ul>
       </div>
     </div>
