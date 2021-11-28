@@ -9,14 +9,16 @@ export default function Portfolio() {
   var portfolioStyle = {
     position: "relative",
     fontSize: "1.5rem",
-    left: "8%"
+    left: "15%",
+    paddingTop: '4%'
   };
 
   var picStyle = {
-    width: '90%',
+    // width: '90%',
     // display: 'block',
-    paddingTop: '8%',
-    marginLeft: '8%'
+    marginLeft: '8%',
+    marginTop: '8%',
+    border: '5px solid lightblue'
   }
 
   var divStyle = {
@@ -25,16 +27,19 @@ export default function Portfolio() {
     width: '100vw'
   }
 
-  var bottomPicStyle = {
-    width: '90%',
-    // display: 'block',
-    paddingTop: '8%',
-    marginLeft: '8%',
-    paddingBottom: '8%'
+  const css = `@media (min-width: 320px) {
+    img {width: 80%;}
   }
+  @media (min-width: 768px) {
+    img {width: 80%;}
+  }
+  @media (min-width: 1200px) {
+    img {width: 90%;}
+  }`;
 
   return (
     <div style={divStyle}>
+       <style scoped>{css}</style>
       <a href="https://afternoon-refuge-09743.herokuapp.com/" 
       target="_blank" rel="noopener noreferrer" ><img style={picStyle} src={project2} alt="Drink and a Movie app"></img></a>
       <a href="https://murda02.github.io/homework-week-6-weather-dashboard-dlm/" 
@@ -46,7 +51,7 @@ export default function Portfolio() {
       <a href="https://murda02.github.io/wk10-team-profile-generator/" 
       target="_blank" rel="noopener noreferrer" ><img style={picStyle} src={teamProfileGenerator} alt="Team Profile Generator app"></img></a>
       <a href="https://tech-blog-dlm.herokuapp.com/" 
-      target="_blank" rel="noopener noreferrer" ><img style={bottomPicStyle} src={techBlog} alt="Tech Blog app"></img></a>
+      target="_blank" rel="noopener noreferrer" ><img style={picStyle} src={techBlog} alt="Tech Blog app"></img></a>
       <div>
       <ul style={portfolioStyle}>
                 <li><a href="https://github.com/murda02/project-2" target="_blank" rel="noopener noreferrer">Drink and A Movie Repo</a></li>
