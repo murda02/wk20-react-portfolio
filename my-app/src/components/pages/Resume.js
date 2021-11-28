@@ -5,12 +5,18 @@ export default function About() {
   var resumeStyle = {
     fontSize: "1.5rem",
     color: 'black',
-    paddingLeft: '2%'
+    paddingLeft: '2%',
+    paddingTop: '4%'
   };
 
   var resumeLinkStyle = {
     textDecoration: 'none',
     color: 'black'
+  };
+
+  var FSProStyle = {
+    paddingTop: '2.6%',
+    fontSize: "2rem"
   };
 
 
@@ -20,7 +26,7 @@ export default function About() {
         <h2>
         <a href={pdf} target="_blank" rel="noopener noreferrer" style={resumeLinkStyle}>Download my Resume</a></h2>
 
-        <h2>Full Stack Proficiencies: </h2>
+        <h2 style={FSProStyle}>Full Stack Proficiencies: </h2>
             <ul>
                 <li>HTML</li>
                 <li>CSS</li>

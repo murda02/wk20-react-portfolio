@@ -11,7 +11,7 @@ const ContactForm = () => {
 
   var inputFields = {
     display: 'block',
-    width: '20%',
+
     padding: '12px 20px',
     margin: '8px 0',
     boxSizing: 'border-box',
@@ -20,7 +20,7 @@ const ContactForm = () => {
   };
 
   var messageStyle = {
-    width: '50%',
+
     display: 'block',
     padding: '12px 40px',
     margin: '8px 0',
@@ -40,8 +40,22 @@ const ContactForm = () => {
     borderRadius: '8px',
     padding: '8px 16px',
     fontSize: '20px'
-
   };
+
+  const css = `@media (min-width: 320px) {
+    input {width: 70%;}
+    textarea {width: 90%;}
+  }
+  @media (min-width: 768px) {
+    input {width: 55%;}
+    textarea {width: 75%;}
+  }
+  @media (min-width: 1200px) {
+    input {width: 40%;}
+    textarea {width: 60%;}
+  }`;
+  
+  
   const [status, setStatus] = useState("Submit");
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -65,6 +79,7 @@ const ContactForm = () => {
   };
   return (
     <form onSubmit={handleSubmit} style={formStyle}>
+      <style scoped>{css}</style>
       <div>
         <label htmlFor="name">Name:</label>
         <input style={inputFields} type="text" id="name" required />

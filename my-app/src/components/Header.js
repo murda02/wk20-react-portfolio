@@ -9,7 +9,6 @@ function Header() {
 var nameStyle = {
   position: 'relative', 
   bottom: '-10%',
-  fontSize: '4rem', 
   color: '#faab6e', 
   display: 'inline',
   left: '2%'
@@ -23,8 +22,25 @@ var headerStyle = {
   minWidth: '100vw'
 }
 
+const css = `@media (min-width: 320px) {
+  h1 {
+    font-size: 2rem; 
+      
+  }
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3rem; 
+}
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 4rem; 
+}
+}`;
+
   return (
     <header style={headerStyle}>
+      <style scoped>{css}</style>
       <h1 style={nameStyle}>Dave Murphy</h1>
       <Navigation />
     </header>

@@ -9,7 +9,7 @@ export default function Contact() {
 
       var contactStyle = {
         paddingLeft: '3%'
-      };
+      };      
 
     return (
        <div>

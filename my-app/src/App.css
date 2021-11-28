@@ -40,8 +40,8 @@ body {
   background-color: rgb(231, 221, 173);
 }
 
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
+/* @media only screen and (max-width: 600px) {
+  h1 {
+    color: lightblue;
   }
-}
+} */
