@@ -25,7 +25,8 @@ export default function About() {
   }
 
   var textStyle = {
-    paddingLeft: '2%'
+    paddingLeft: '2%',
+    fontSize: "2rem"
   }
 
   const css = `@media (min-width: 320px) {
