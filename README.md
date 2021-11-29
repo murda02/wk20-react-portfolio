@@ -6,7 +6,7 @@
 * [Screenshot](#screenshot)
 * [Installation](#installation)
 * [License](#license)
-* [Questions](#question)
+* [Questions](#questions)
 
 ## Description
 

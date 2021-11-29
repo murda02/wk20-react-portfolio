@@ -28,7 +28,6 @@ export default function About() {
   const css = `@media (min-width: 320px) {
     img {
       width: 70%;
-        
     }
   }
   @media (min-width: 768px) {
