@@ -15,8 +15,8 @@ const contactEmail = nodemailer.createTransport({
   port: 587,
   secure: false, // use TLS
   auth: {
-    user: "davelmurphy@zoho.com",
-    pass: "WeWillHaveABetterLife11!",
+    user: "******",
+    pass: "******",
   },
 });
 
